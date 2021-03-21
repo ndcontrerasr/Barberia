@@ -1,0 +1,54 @@
+.invalidar-cita {
+	// margin: 2rem;
+}
+
+.resumen {
+	margin: 4.5rem 2rem;
+
+	p {
+		margin-bottom: .5rem;
+		span {
+			font-weight: 600;
+			color: $azul;
+			font-size: 2.4rem;
+		}
+	}
+
+	.servicio {
+		color: $azul;
+		padding: 2rem;
+		margin: 3rem auto 2rem;
+		font-size: 2.6rem;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	.conServicio {
+		display: block;
+		margin-bottom: 2rem
+
+	}
+
+	.newservicio {
+		display: grid;
+		margin-bottom: 2rem;
+		grid-template-columns: auto 10rem;
+		grid-gap: 2.5rem;
+		border-bottom: 3px solid lighten(#fff, 10);
+	}
+	
+	.nombre {
+		text-align: left;
+		margin-right: 2rem;
+		font-size: 2.4rem;
+		font-weight: 600;
+	}
+
+	.precio {
+		text-align: right;
+		margin-right: 2rem;
+		font-size: 2.4rem;
+		font-weight: 600;
+		color: $azul;
+	}
+}

@@ -1,0 +1,57 @@
+.listado-servicios {
+	margin: 1rem 3%;
+
+	@include media580 {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-column-gap: 2rem;
+	}
+
+	@include media768 {
+		grid-template-columns: repeat(1, 1fr);
+		grid-column-gap: 0;
+	}
+
+	@include media1200 {
+		grid-template-columns: repeat(2, 1fr);
+		grid-column-gap: 2rem;
+	}
+
+	.servicio {
+		display: block;
+		background-color: white;
+		margin-top: 1rem; 
+		border-radius: 1rem;
+		border: none;
+		align-items: center;
+	}
+
+	.nombre-servicio {
+		padding: 2rem;
+		padding-bottom: .8rem;
+		margin: auto 1rem;
+		color: black;
+		font-size: 2.2rem;
+		font-weight: 500;
+	}
+
+	.precio-servicio {
+		padding: 2rem;
+		padding-top: .8rem;	
+		margin: auto 1rem;
+		color: $azul;
+		font-size: 2.5rem;
+		font-weight: 600;
+	}
+
+	.seleccionado {
+		background-color: $azul;
+		.nombre-servicio {
+			color: white;
+		}
+
+		.precio-servicio {
+			color: white;
+		}
+	}
+}

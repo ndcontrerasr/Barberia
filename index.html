@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Salón de Belleza</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="build/css/app.css">
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</head>
+<body>
+
+    <div class="contenedor-estetica">
+        <div class="imagen"></div>
+        <div class="app">
+            <header class="header">
+                <h1 class="texto_centrado titulo">App Peluqueria</h1>
+            </header>
+            <nav class="tabs texto_centrado">
+                <div class="btn-block">
+                    <button class="boton" type="button" data-paso= "1">Servicios</button>
+                </div>
+                <div class="btn-block">
+                    <button class="boton" type="button" data-paso= "2">Información Cliente</button>
+                </div>
+                <div class="btn-block">
+                    <button class="boton" type="button" data-paso= "3">Resumen</button>
+                </div>
+            </nav>
+
+            <!-- Iniciar Contenidos App -->
+            <div id="parte-1" class="seccion">
+                <h2 class="texto_centrado">Servicios</h2>
+                <p class="texto_centrado">Elige tus servicios a continuacion</p>
+                <div class="listado-servicios" id="servicios"></div>
+            </div>
+
+            <div id="parte-2" class="seccion">
+                <h2 class="texto_centrado">Tus Datos y Citas</h2>
+                 <p class="texto_centrado"> Coloca tus datos y fecha de tu cita</p>
+                <form class="formulario">
+                    <div class="Pnombre">
+                        <label for="Nombre">
+                            Nombre
+                        </label>
+                        <input 
+                            id="nombre" 
+                            type="text"
+                            placeholder="Tu Nombre" 
+                            name=""
+                            >
+                    </div>
+
+                    <div class="Pdate">
+                        <label for="Date">
+                            Fecha
+                        </label>
+                        <input 
+                            id="fecha" 
+                            type="date"
+                            placeholder="La fecha"
+                            name="">
+                    </div>
+
+                    <div class="Phora">
+                        <label for="hora">
+                            Hora
+                        </label>
+                        <input 
+                            id="Hora" 
+                            type="time"
+                            placeholder="La hora" 
+                            name="">
+                    </div>
+
+                </form>
+            </div>
+            
+            <div id="parte-3" class="seccion">
+                <h2 class="texto_centrado">Resumen</h2>
+            </div>
+
+            <div class="paginacion texto_derecha">
+                <button id="antes">
+                    &laquo; Anterior
+                </button>
+                <button id="despues">
+                    Siguiente &raquo;
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="build/js/bundle.js"></script>
+</body>
+</html>

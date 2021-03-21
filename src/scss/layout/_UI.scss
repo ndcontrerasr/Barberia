@@ -1,0 +1,57 @@
+.contenedor-estetica {
+
+	height: 100vh;
+	display: grid;
+	grid-template-rows: repeat(2, 1fr);
+	grid-gap: 2rem;
+	@include media768 {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(1, 1fr);
+	}
+
+	.imagen {
+		height: 35rem;
+		background-image: url(../img/1.jpg);
+		background-size: cover;
+		background-position: 50%;
+		
+		@include media768 {
+			height: auto;
+			width: 100%;
+		}
+	}
+}
+
+.app {
+	width: 95%;
+	margin: 0 auto;
+	padding-top: 1.5rem;
+}
+
+.header {
+	margin: 1rem 0 2rem;
+	h1 {
+		color: $azul;
+	}
+}
+
+.seccion {
+	display: none;
+	margin-top: 3.5rem;
+
+	// &:first-of-type {
+	// 	display: block;
+	// }
+
+	h2 {
+		color: $azul;
+	}
+	p {
+		color: white;
+	}
+}
+
+.mostrar-seccion {
+	display: block !important;
+}
+

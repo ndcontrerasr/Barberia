@@ -1,0 +1,55 @@
+.paginacion {
+	display: grid;
+	grid-template-rows: repeat(2, 1fr);
+	padding: 1rem 1.8rem;
+	margin: 2rem auto;	
+	grid-row-gap: 2rem;
+	
+	@include media580 {
+		grid-template-rows: repeat(1, 1fr);
+		grid-template-columns: repeat(2, 1fr);
+		grid-row-gap: 0;
+		grid-column-gap: 2rem;
+	}
+
+	@include media768 {
+		grid-template-rows: repeat(2, 1fr);
+		grid-template-columns: repeat(1, 1fr);
+		grid-row-gap: 2rem;
+		grid-column-gap: 0;
+	}
+
+	@include media1200 {
+		grid-template-rows: repeat(1, 1fr);
+		grid-template-columns: repeat(2, 1fr);
+		grid-row-gap: 0;
+		grid-column-gap: 2rem;
+	}
+	
+
+	button {
+		padding: 2rem 0;
+		border-radius: 1rem;
+		font-size: 2.3rem;
+		font-weight: 500;
+		border: none;
+		text-transform: uppercase;
+
+		&:hover {
+			@include degradado-azul;
+			color: white;
+		}
+
+		&.ocultar {
+			visibility: hidden;
+		}
+	}
+
+
+	
+	// .despues {
+	// 	padding: 2rem 0;
+
+	// 	// margin-top: 2rem;
+	// }
+}
